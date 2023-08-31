@@ -15,7 +15,19 @@ output:
 ---
 
 # Bonus section
+```{r}
+library(tidyverse)
+```
 
 ## Loading the data
+```{r}
+data <-read.csv("raw_data/data.csv")
+```
 
 ## An interesting plot
+```{r}
+ggplot(data = data, mapping = aes(x= TempC, y= VO2_ml_per_h)) + 
+  geom_point()
+         
+```
+
